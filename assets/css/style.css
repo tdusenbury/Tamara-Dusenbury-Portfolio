@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    background: linear-gradient (chartreuse);
+}
+
+.header h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    font-size: 45px;
+    color: white;
+}
+
+.header p {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 32px;
+}
+
+.aside h2 {
+    margin: 15px;
+    position: relative;
+    border: 3px solid black;
+    text-align: center;
+    bottom: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.aside p {
+    bottom: 20px;
+    margin: 12px;
+    position: relative;
+}
+
+.aside pre {
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5;
+    user-select: text;
+    background-color: white;
+}
