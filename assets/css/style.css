@@ -1,22 +1,77 @@
+* {
+    box-sizing: border-box;
+    background-color: chartreuse;
+    margin: 0;
+    padding: 0;
+
+}
+
+title {
+    display: none;
+}
+
+
 body {
     display: flex;
     background: linear-gradient (chartreuse);
 }
 
-.header h1 {
+header {
+    background-color: blueviolet;
+}
+header h1 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: left;
-    font-size: 45px;
-    color: white;
+    font-size: 36px;
+    color: black;
 }
 
-.header p {
+header p {
     font-family:Arial, Helvetica, sans-serif;
     text-align: left;
-    font-size: 32px;
+    font-size: 24px;
+    color: pink;
 }
 
-.aside h2 {
+.nav {
+    box-sizing: border-box;
+    margin-top: 10px;
+    padding-top: 0px;
+    justify-content: right;
+    text-align: right;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.nav ul {
+    list-style-type: disc;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+   
+}
+
+.nav ul li {
+    display: inline;
+}
+
+main {
+    display: flex;
+    flex-wrap: flex;
+}
+aside {
+    flex: 1;
+    background-color: aqua;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    border-style: dotted;
+    color: orange;
+}
+aside h2 {
     margin: 15px;
     position: relative;
     border: 3px solid black;
@@ -25,16 +80,32 @@ body {
     font-family:'Courier New', Courier, monospace;
 }
 
-.aside p {
+aside p {
     bottom: 20px;
     margin: 12px;
     position: relative;
 }
 
-.aside pre {
+aside pre {
     border-radius: 10px;
     margin: 10px;
     padding: 5;
     user-select: text;
     background-color: white;
+}
+
+section {
+    display: block;
+}
+
+.card {
+    border: 3px solid darkgrey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 350 px;
+    margin: 10px 5px 20px 5px;
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    color: webkit link;
+    text-decoration-color: hotpink;
 }
