@@ -145,10 +145,16 @@ article p {
 }
 
 .contact h2 {
-
+    align-text: left;
 }
 .contact a {
     display: inline;
+    margin-right: 30px;
+    align-text: right;
+}
+
+h3 {
+    text-align: center;
 }
 @media screen and (max-width: 992px) {
     header, .contact {
