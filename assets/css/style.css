@@ -17,6 +17,7 @@ header {
 }
 
 h1 {
+    line-height: 50px;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -36,10 +37,14 @@ header img {
     float: right;
     margin-right: 5px;
     margin-top: 5px;
+    padding: 10px;
+    background-color: white;
+
 }
 
 nav {
     display: flex;
+    flex-direction: column;
     display: inline;
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
@@ -54,23 +59,59 @@ nav a {
     margin-bottom: 20px;
 }
 
+button {
+    width: 200px;
+    margin: 10px .5%;
+    font-size: 75%;
+    color: darkblue;
+    background-color: white;
+    border: 2px solid black;
+}
+ button:hover {
+    background-color: aqua;
+    color: black;
+ }
+
+ button:focus {
+    outline: none;
+    border-color: darkgreen;
+ }
+
+.container {
+    background-color: lemonchiffon;
+    flex: 1;
+}
+
 .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 2500px;
+    /*max-width: 2500px;*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: lemonchiffon;
 }
 
 .card {
-    border: 2px solid darkslategray;
+    border: 5px solid darkslategray;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 350px;
-    margin: 50px 20px 50px 20px;
+    width: 400px;
+    height: 550px;
+    margin: 20px 100px 20px 10px;
+}
+.card p {
+    font-size: 20px;
+}
+
+.card a {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: 20px;
+    border: 2px solid orange;
+
 }
 
 article h2 {
@@ -80,6 +121,14 @@ article h2 {
     text-align: center;
     bottom: 30px;
     font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+article p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    font-weight: bold;
+    
 }
 
 contact {
@@ -91,6 +140,11 @@ contact {
     color: pink; 
 }
 
+@media screen and (max-width: 992px) {
+    header {
+        background-color: lightblue;
+    }
+}
 
 
 a:-webkit-any-link {
