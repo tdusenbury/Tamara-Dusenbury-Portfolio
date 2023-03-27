@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: blueviolet;
+    background-color: lavender;
     padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
@@ -28,7 +28,7 @@ header p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     font-size: 24px;
-    color: pink;
+    color: hotpink;
 }
 
 header img {
@@ -111,7 +111,9 @@ button {
     margin-bottom: 25px;
     margin: 20px;
     border: 2px solid orange;
-
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    font-size: 20px;
 }
 
 article h2 {
@@ -131,17 +133,25 @@ article p {
     
 }
 
-contact {
+.contact {
+    display: inline;
     flex-direction: column;
     margin-top: 10px;
     display: block;
     text-align: left;
     font-size: 24px;
-    color: pink; 
+    font-family:'Courier New', Courier, monospace;
+    background-color: lavender;
 }
 
+.contact h2 {
+
+}
+.contact a {
+    display: inline;
+}
 @media screen and (max-width: 992px) {
-    header {
+    header, .contact {
         background-color: lightblue;
     }
 }
