@@ -16,7 +16,7 @@ Thank you for checking out my development porfolio! Here you can see how my proj
 
 The journey to make the initial layout for this site began less than a week after I first dove into full stack development. Many times throughout I thought I would just cry; but then I would slow down, review my work, and get an "A-Ha!" moment....or "A-Ha!" adjacent. The bottom line is that these projects pushed me to accept that I can exist out of my comfort zone, on a steep learning curve, up-hill both ways, and I can do it!
 
-![alt text](assets/images/screenshot.png)
+![Screenshot of My Site](assets/images/T%20Portfolio%20Screenshot.PNG)
 
 Check out my site here:
 
@@ -38,6 +38,7 @@ I had to utilize Git skills to create and maintain the repository during this pr
 
 
 TAMARA "T" DUSENBURY
+```
     I am excited to take my knowledge of various industries into the virtual realm.
 
 * [Portfolio](https://youtu.be/bHX54GCrDB4)
