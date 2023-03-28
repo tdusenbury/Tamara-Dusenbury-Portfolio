@@ -108,9 +108,10 @@ button {
 }
 
 .projects h2 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 36px;
     color: darkslategray; 
+    text-align: center;
 }
 
 .projects p {
@@ -125,6 +126,7 @@ button {
 #Project-1 img {
     height: 500px;
     width: 500px;
+    margin-right: 50px;
 }
    
 .contact {
