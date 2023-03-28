@@ -1,7 +1,3 @@
-* {
-    
-}
-
 body {
     display: block;
     font-family: Arial, Helvetica, sans-serif;
@@ -78,21 +74,139 @@ button {
  }
 
 .container {
-    background-color: lemonchiffon;
-    flex: 1;
+    height: 2000px;
+    width: 100%;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table; 
+}
+
+#about-me {
+    position: relative;
+    text-align: center;
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid darkslategray;
+    font-size: 24px;
+}
+#about-me h2 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 36px;
+    color: darkslategray;
+}
+
+#about-me img {
+    opacity: 0.5;
+    max-height: 400px;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: hotpink;
+}
+
+#solo-projects img {
+    position: absolute;
+    opacity: 0.5;
+    max-height: 500px;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: red;
+}
+
+.me {
+    height: 300px;
+    width: 200px;
+    }
+.me > img {
+    width: 225px;
+    height: 300px;
+    border-style: solid;
+    border-color:  black;
+    margin-left: 200px;
+
+
+
+
+
+
+
+
+#group-projects img {
+    position: absolute;
+    opacity: 0.5;
+    max-height: 500px;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: skyblue;
+}
+
+.contact {
+    display: inline;
+    flex-direction: column;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    font-family:'Courier New', Courier, monospace;
+    background-color: lavender;
+}
+
+.contact h2 {
+    align-text: left;
+}
+.contact a {
+    display: inline;
+    margin-right: 30px;
+    align-text: right;
+}
+
+h3 {
+    text-align: center;
+}
+@media screen and (max-width: 992px) {
+    header, 
+    .contact {
+       flex-direction: column;
+    }
+
+ @media screen and (max-width: 768px) {
+        body,
+        nav {
+          flex-direction: column;
+        }
+      }
+
+}
+a:-webkit-any-link {
+    cursor: pointer;
+    color: webkit link;
+    text-decoration-color: hotpink;
+}
+
+
+/*
 .boxes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     /*max-width: 2500px;*/
-    margin-left: auto;
+   /* margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: lemonchiffon;
 }
 
 .card {
@@ -131,40 +245,5 @@ article p {
     margin: 5px;
     font-weight: bold;
     
-}
+*/
 
-.contact {
-    display: inline;
-    flex-direction: column;
-    margin-top: 10px;
-    display: block;
-    text-align: left;
-    font-size: 24px;
-    font-family:'Courier New', Courier, monospace;
-    background-color: lavender;
-}
-
-.contact h2 {
-    align-text: left;
-}
-.contact a {
-    display: inline;
-    margin-right: 30px;
-    align-text: right;
-}
-
-h3 {
-    text-align: center;
-}
-@media screen and (max-width: 992px) {
-    header, .contact {
-        background-color: lightblue;
-    }
-}
-
-
-a:-webkit-any-link {
-    cursor: pointer;
-    color: webkit link;
-    text-decoration-color: hotpink;
-}
