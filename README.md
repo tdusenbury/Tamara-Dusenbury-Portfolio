@@ -17,7 +17,7 @@ The journey to make the initial layout for this site began less than a week afte
 ![Screenshot of My Site](assets/images/T%20Portfolio%20Screenshot.PNG)
 
 
-[Visit the Deployed Site](https://youtu.be/BFyeuLhjcPY)
+[Visit the Deployed Site](https://tdusenbury.github.io/Tamara-Dusenbury-Portfolio/)
 
 
 ## Usage 
