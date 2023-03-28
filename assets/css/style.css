@@ -1,13 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+
 body {
-    display: block;
+
     font-family: Arial, Helvetica, sans-serif;
-    margin: 50px;
+    margin: 5px;
 }
 
 header {
     background-color: lavender;
-    padding: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
     color: black;
     text-align: left;
 }
@@ -33,15 +38,14 @@ header img {
     float: right;
     margin-right: 5px;
     margin-top: 5px;
-    padding: 10px;
-    background-color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: darkslategray;
 
 }
 
 nav {
     display: flex;
-    flex-direction: column;
-    display: inline;
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -50,7 +54,7 @@ nav a {
     color: black;
     padding: 14px 20px;
     text-decoration: none;
-    text-align: left;
+    text-align: center;
     font-size: 16px;
     margin-bottom: 20px;
 }
@@ -73,93 +77,63 @@ button {
     border-color: darkgreen;
  }
 
-.container {
-    height: 2000px;
-    width: 100%;
-}
+ main {
+    display: flex;
+    flex-wrap: wrap;
+ }
 
-.column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table; 
-}
-
-#about-me {
-    position: relative;
+ aside {
+    flex: 1;
+    background-color: lemonchiffon;
+    padding: 40px;
     text-align: center;
-    color: darkslategray;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid darkslategray;
-    font-size: 24px;
+ }
+
+ aside img {
+    height: 350px;
+    width: 200;
+ }
+.container {
+    flex: 4;
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#about-me h2 {
-    font-family:'Courier New', Courier, monospace;
+
+.projects {
+    padding: 15px;
+    flex: 0 0 400px;
+}
+
+.projects h2 {
+    font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
-    color: darkslategray;
+    color: darkslategray; 
 }
 
-#about-me img {
-    opacity: 0.5;
-    max-height: 400px;
-    max-width: 300px;
-    margin-right: 20px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: hotpink;
+.projects p {
+
 }
 
-#solo-projects img {
-    position: absolute;
-    opacity: 0.5;
-    max-height: 500px;
-    max-width: 500px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: red;
+.projects img {
+    height: 350px;
+    width: 350px;
 }
 
-.me {
-    height: 300px;
-    width: 200px;
-    }
-.me > img {
-    width: 225px;
-    height: 300px;
-    border-style: solid;
-    border-color:  black;
-    margin-left: 200px;
-
-
-
-
-
-
-
-
-#group-projects img {
-    position: absolute;
-    opacity: 0.5;
-    max-height: 500px;
-    max-width: 500px;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: skyblue;
+#Project-1 img {
+    height: 500px;
+    width: 500px;
 }
-
+   
 .contact {
-    display: inline;
-    flex-direction: column;
+    flex-wrap: flex;
     margin-top: 10px;
     display: block;
     text-align: left;
     font-size: 24px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     background-color: lavender;
 }
 
@@ -170,20 +144,15 @@ button {
     display: inline;
     margin-right: 30px;
     align-text: right;
+    font-family: arial;
 }
 
 h3 {
     text-align: center;
 }
-@media screen and (max-width: 992px) {
-    header, 
-    .contact {
-       flex-direction: column;
-    }
 
  @media screen and (max-width: 768px) {
-        body,
-        nav {
+        main, nav, contact {
           flex-direction: column;
         }
       }
@@ -194,56 +163,4 @@ a:-webkit-any-link {
     color: webkit link;
     text-decoration-color: hotpink;
 }
-
-
-/*
-.boxes {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    /*max-width: 2500px;*/
-   /* margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.card {
-    border: 5px solid darkslategray;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    width: 400px;
-    height: 550px;
-    margin: 20px 100px 20px 10px;
-}
-.card p {
-    font-size: 20px;
-}
-
-.card a {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin: 20px;
-    border: 2px solid orange;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight:bold;
-    font-size: 20px;
-}
-
-article h2 {
-    margin: 15px;
-    border: 3px solid black;
-    position: top;
-    text-align: center;
-    bottom: 30px;
-    font-family:'Courier New', Courier, monospace;
-    font-size: 30px;
-}
-
-article p {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 5px;
-    font-weight: bold;
-    
-*/
 
